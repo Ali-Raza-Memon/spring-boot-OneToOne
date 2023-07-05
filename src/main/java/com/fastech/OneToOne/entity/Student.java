@@ -9,10 +9,7 @@ public class Student {
     private int stdId;
     private String stdName;
     private String stdAbout;
-
-    @OneToOne
+    @OneToOne(mappedBy = "student")
     @JoinColumn(name = "Laptop_id")
     private Laptop laptop;
-
-
 }
