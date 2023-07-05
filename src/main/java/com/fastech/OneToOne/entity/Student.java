@@ -10,6 +10,9 @@ public class Student {
     private String stdName;
     private String stdAbout;
 
+    @OneToOne
+    @JoinColumn(name = "Laptop_id")
+    private Laptop laptop;
 
 
 }

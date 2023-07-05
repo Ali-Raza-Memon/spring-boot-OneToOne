@@ -9,6 +9,7 @@ public class Laptop {
     private int laptopId;
     private String brand;
 
+    private String modelNumber;
 
     @OneToOne
     @JoinColumn(name = "Student_id")
